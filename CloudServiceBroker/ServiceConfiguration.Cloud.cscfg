@@ -3,26 +3,59 @@
   <Role name="WebBrokerRole">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=servicebrokercloud;AccountKey=yowM1f3tyV8+orNq7Aewug0qB4DmVxqcA3FfD9pB+E5mRboUebzjU9DeXnEvYaT1XETGjSVuss9ywg9sjj6gKQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="dtripathi" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBmAYJKoZIhvcNAQcDoIIBiTCCAYUCAQAxggFBMIIBPQIBADAlMBExDzANBgNVBAMTBkFaUm9vdAIQn02ccTEEtbhAtljXJ2iEqzANBgkqhkiG9w0BAQEFAASCAQBKusMB2EckpBViHw/+11r1MqhFm+gMcxaY5ZeHNdHWH3t/UD3I6Ghqvmiw4V++7hR5hXvKaFCn8YTBXSRqFwv1CdqtZl2a87cKfzBCGAnHLn9nWLLzNhEdR3n/5FW+fGlOwFvtDpIhRBmzoDPZdnSGESVcThxhX27uDfUJmkXUIqX3DuL+A8p8pbsGGpSYTEpZzUQad2wnfwY4L3PBpdfBOS6Adsd58gs1kCbRedJpmzk8ayH/G0NGkOD5qtUDFKZOo28t9N5QXNpFt8svLa1MfICclT5HEyL9cRDjEdNuBPYCaWiHrcdfKmkAfn8LVu+x2dQCe4TFkwcmRAp+O0XjMDsGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIRdTCbUoKDH+AGIlp4A12TRw5p9xHerCZuUzEVDiU0CinaQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2017-09-06T23:59:59.0000000+01:00" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d126d179-be70-4bd8-930f-e7244433eeb6" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="AAD77F37BDFDD7A9361B1FF6C9CA1B6057284A3F" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
   <Role name="WebBrokerWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=servicebrokercloud;AccountKey=yowM1f3tyV8+orNq7Aewug0qB4DmVxqcA3FfD9pB+E5mRboUebzjU9DeXnEvYaT1XETGjSVuss9ywg9sjj6gKQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="dtripathi" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBmAYJKoZIhvcNAQcDoIIBiTCCAYUCAQAxggFBMIIBPQIBADAlMBExDzANBgNVBAMTBkFaUm9vdAIQn02ccTEEtbhAtljXJ2iEqzANBgkqhkiG9w0BAQEFAASCAQBKusMB2EckpBViHw/+11r1MqhFm+gMcxaY5ZeHNdHWH3t/UD3I6Ghqvmiw4V++7hR5hXvKaFCn8YTBXSRqFwv1CdqtZl2a87cKfzBCGAnHLn9nWLLzNhEdR3n/5FW+fGlOwFvtDpIhRBmzoDPZdnSGESVcThxhX27uDfUJmkXUIqX3DuL+A8p8pbsGGpSYTEpZzUQad2wnfwY4L3PBpdfBOS6Adsd58gs1kCbRedJpmzk8ayH/G0NGkOD5qtUDFKZOo28t9N5QXNpFt8svLa1MfICclT5HEyL9cRDjEdNuBPYCaWiHrcdfKmkAfn8LVu+x2dQCe4TFkwcmRAp+O0XjMDsGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIRdTCbUoKDH+AGIlp4A12TRw5p9xHerCZuUzEVDiU0CinaQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2017-09-06T23:59:59.0000000+01:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d126d179-be70-4bd8-930f-e7244433eeb6" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="AAD77F37BDFDD7A9361B1FF6C9CA1B6057284A3F" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
   <Role name="WebBrokerServiceBus">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=servicebrokercloud;AccountKey=yowM1f3tyV8+orNq7Aewug0qB4DmVxqcA3FfD9pB+E5mRboUebzjU9DeXnEvYaT1XETGjSVuss9ywg9sjj6gKQ==" />
       <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://[your namespace].servicebus.windows.net;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=[your key]" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="dtripathi" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBmAYJKoZIhvcNAQcDoIIBiTCCAYUCAQAxggFBMIIBPQIBADAlMBExDzANBgNVBAMTBkFaUm9vdAIQn02ccTEEtbhAtljXJ2iEqzANBgkqhkiG9w0BAQEFAASCAQBKusMB2EckpBViHw/+11r1MqhFm+gMcxaY5ZeHNdHWH3t/UD3I6Ghqvmiw4V++7hR5hXvKaFCn8YTBXSRqFwv1CdqtZl2a87cKfzBCGAnHLn9nWLLzNhEdR3n/5FW+fGlOwFvtDpIhRBmzoDPZdnSGESVcThxhX27uDfUJmkXUIqX3DuL+A8p8pbsGGpSYTEpZzUQad2wnfwY4L3PBpdfBOS6Adsd58gs1kCbRedJpmzk8ayH/G0NGkOD5qtUDFKZOo28t9N5QXNpFt8svLa1MfICclT5HEyL9cRDjEdNuBPYCaWiHrcdfKmkAfn8LVu+x2dQCe4TFkwcmRAp+O0XjMDsGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIRdTCbUoKDH+AGIlp4A12TRw5p9xHerCZuUzEVDiU0CinaQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2017-09-06T23:59:59.0000000+01:00" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d126d179-be70-4bd8-930f-e7244433eeb6" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="AAD77F37BDFDD7A9361B1FF6C9CA1B6057284A3F" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
   <Role name="WebBrokerServicesWCF">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=servicebrokercloud;AccountKey=yowM1f3tyV8+orNq7Aewug0qB4DmVxqcA3FfD9pB+E5mRboUebzjU9DeXnEvYaT1XETGjSVuss9ywg9sjj6gKQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="dtripathi" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBmAYJKoZIhvcNAQcDoIIBiTCCAYUCAQAxggFBMIIBPQIBADAlMBExDzANBgNVBAMTBkFaUm9vdAIQn02ccTEEtbhAtljXJ2iEqzANBgkqhkiG9w0BAQEFAASCAQBKusMB2EckpBViHw/+11r1MqhFm+gMcxaY5ZeHNdHWH3t/UD3I6Ghqvmiw4V++7hR5hXvKaFCn8YTBXSRqFwv1CdqtZl2a87cKfzBCGAnHLn9nWLLzNhEdR3n/5FW+fGlOwFvtDpIhRBmzoDPZdnSGESVcThxhX27uDfUJmkXUIqX3DuL+A8p8pbsGGpSYTEpZzUQad2wnfwY4L3PBpdfBOS6Adsd58gs1kCbRedJpmzk8ayH/G0NGkOD5qtUDFKZOo28t9N5QXNpFt8svLa1MfICclT5HEyL9cRDjEdNuBPYCaWiHrcdfKmkAfn8LVu+x2dQCe4TFkwcmRAp+O0XjMDsGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIRdTCbUoKDH+AGIlp4A12TRw5p9xHerCZuUzEVDiU0CinaQ==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2017-09-06T23:59:59.0000000+01:00" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="d126d179-be70-4bd8-930f-e7244433eeb6" />
     </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="AAD77F37BDFDD7A9361B1FF6C9CA1B6057284A3F" thumbprintAlgorithm="sha1" />
+    </Certificates>
   </Role>
 </ServiceConfiguration>
